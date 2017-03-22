@@ -1,0 +1,83 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             asm_func, CODE, READONLY
+    2 00000000         ; Export my_asm function location so that C compiler can
+                        find it and link
+    3 00000000                 EXPORT           myasm
+    4 00000000         myasm
+    5 00000000         
+    6 00000000         ; Write assmebler here
+    7 00000000 F04F 5100       MOV              R1, #0x20000000
+    8 00000004 4708            BX               R1          ; THIS IS BAD
+    9 00000006 4770            BX               LR
+   10 00000008         
+   11 00000008                 EXPORT           spinlock
+   12 00000008         spinlock
+   13 00000008 E850 1F00       LDREX            R1,[R0]     ;Read counter
+   14 0000000C 3901            SUBS             R1, #1      ;Subtract 1
+   15 0000000E BF5C            ITT              PL          ;IF True True >= 0
+   16 00000010 E840 1200       STREXPL          R2,R1,[R0]  ;TRY UPDATE
+   17 00000014 2A00            CMPPL            R2,#0       ;SUCCEED?
+   18 00000016 D1FE            BNE              spinlock
+   19 00000018 4770            BX               LR
+   20 0000001A         
+   21 0000001A                 EXPORT           spinunlock
+   22 0000001A         spinunlock
+   23 0000001A E850 1F00       LDREX            R1,[R0]
+   24 0000001E F101 0101       ADD              R1,#1
+   25 00000022 E840 1200       STREX            R2,R1,[R0]
+   26 00000026 2A00            CMP              R2,#0
+   27 00000028 D1FE            BNE              spinunlock
+   28 0000002A 4770            BX               LR
+   29 0000002C                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
+erwork --depend=.\build\myasm.d -o.\build\myasm.o -IC:\Keil_v5\ARM\RV31\INC -IC
+:\Keil_v5\ARM\CMSIS\Include -IC:\Keil_v5\ARM\Inc\ST\STM32F4xx --predefine="__MI
+CROLIB SETA 1" --predefine="__UVISION_VERSION SETA 521" --list=.\build\myasm.ls
+t myasm.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+asm_func 00000000
+
+Symbol: asm_func
+   Definitions
+      At line 1 in file myasm.s
+   Uses
+      None
+Comment: asm_func unused
+myasm 00000000
+
+Symbol: myasm
+   Definitions
+      At line 4 in file myasm.s
+   Uses
+      At line 3 in file myasm.s
+Comment: myasm used once
+spinlock 00000008
+
+Symbol: spinlock
+   Definitions
+      At line 12 in file myasm.s
+   Uses
+      At line 11 in file myasm.s
+      At line 18 in file myasm.s
+
+spinunlock 0000001A
+
+Symbol: spinunlock
+   Definitions
+      At line 22 in file myasm.s
+   Uses
+      At line 21 in file myasm.s
+      At line 27 in file myasm.s
+
+4 symbols
+337 symbols in table
