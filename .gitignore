@@ -28,3 +28,26 @@
 *.exe
 *.out
 *.app
+
+# uVision
+*.axf
+*.htm
+*.Inp
+*.map
+*.tra
+*.dep
+*.__i
+*.crf
+*.d
+*.lst
+*.lnp
+*.bak
+*.Vishwas
+*.fed
+*._2i
+*.l1p
+*.l2p
+*.iex
+.#*
+*.uvgui.*
+*.uvopt
