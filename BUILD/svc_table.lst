@@ -71,15 +71,14 @@ ARM Macro Assembler    Page 2
 
    53 00000004                 END
 Command Line: --debug --xref --cpreproc --diag_suppress=9931 --cpu=Cortex-M4.fp
- --apcs=interwork --depend=.\build\svc_table.d -o.\build\svc_table.o -IC:\Users
-\msimpson1\Desktop\Nick\SOFT253_Template_Weather_OS\RTE -IC:\Keil_v5\ARM\PACK\K
-eil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include -IC:\Keil_v5\
-ARM\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0 --predefine="_
-_UVISION_VERSION SETA 521" --predefine="STM32F401xE SETA 1" --cpreproc_opts=-D_
-_ASSERT_MSG,-DTRANSACTION_QUEUE_SIZE_SPI=2,-D__CORTEX_M4,-DUSB_STM_HAL,-DARM_MA
-TH_CM4,-D__FPU_PRESENT=1,-DUSBHOST_OTHER,-D__MBED_CMSIS_RTOS_CM,-D__CMSIS_RTOS 
---list=.\build\svc_table.lst mbed-os/rtos/rtx/TARGET_CORTEX_M/TARGET_RTOS_M4_M7
-/TOOLCHAIN_ARM/SVC_Table.S
+ --apcs=interwork --depend=.\build\svc_table.d -o.\build\svc_table.o -I.\RTE\_S
+OFT253_Template_Weather_OS -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Driv
+ers\CMSIS\Device\ST\STM32F4xx\Include -IC:\Keil_v5\ARM\CMSIS\Include -IC:\Keil_
+v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0 --predefine="__UVISION_VERSION SETA 523" 
+--predefine="STM32F401xE SETA 1" --cpreproc_opts=-D__ASSERT_MSG,-DTRANSACTION_Q
+UEUE_SIZE_SPI=2,-D__CORTEX_M4,-DUSB_STM_HAL,-DARM_MATH_CM4,-D__FPU_PRESENT=1,-D
+USBHOST_OTHER,-D__MBED_CMSIS_RTOS_CM,-D__CMSIS_RTOS --list=.\build\svc_table.ls
+t mbed-os/rtos/rtx/TARGET_CORTEX_M/TARGET_RTOS_M4_M7/TOOLCHAIN_ARM/SVC_Table.S
 
 
 

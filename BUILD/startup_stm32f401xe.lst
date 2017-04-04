@@ -726,15 +726,14 @@ ARM Macro Assembler    Page 12
               00000000 
 Command Line: --debug --xref --cpreproc --diag_suppress=9931 --cpu=Cortex-M4.fp
  --apcs=interwork --depend=.\build\startup_stm32f401xe.d -o.\build\startup_stm3
-2f401xe.o -IC:\Users\msimpson1\Desktop\Nick\SOFT253_Template_Weather_OS\RTE -IC
-:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.8.0\Drivers\CMSIS\Device\ST\STM32F4xx\I
-nclude -IC:\Keil_v5\ARM\CMSIS\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\
-2.8.0 --predefine="__UVISION_VERSION SETA 521" --predefine="STM32F401xE SETA 1"
- --cpreproc_opts=-D__ASSERT_MSG,-DTRANSACTION_QUEUE_SIZE_SPI=2,-D__CORTEX_M4,-D
-USB_STM_HAL,-DARM_MATH_CM4,-D__FPU_PRESENT=1,-DUSBHOST_OTHER,-D__MBED_CMSIS_RTO
-S_CM,-D__CMSIS_RTOS --list=.\build\startup_stm32f401xe.lst mbed-os/targets/TARG
-ET_STM/TARGET_STM32F4/TARGET_STM32F401xE/device/TOOLCHAIN_ARM_STD/startup_stm32
-f401xe.S
+2f401xe.o -I.\RTE\_SOFT253_Template_Weather_OS -IC:\Keil_v5\ARM\PACK\Keil\STM32
+F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include -IC:\Keil_v5\ARM\CMSI
+S\Include -IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0 --predefine="__UVISIO
+N_VERSION SETA 523" --predefine="STM32F401xE SETA 1" --cpreproc_opts=-D__ASSERT
+_MSG,-DTRANSACTION_QUEUE_SIZE_SPI=2,-D__CORTEX_M4,-DUSB_STM_HAL,-DARM_MATH_CM4,
+-D__FPU_PRESENT=1,-DUSBHOST_OTHER,-D__MBED_CMSIS_RTOS_CM,-D__CMSIS_RTOS --list=
+.\build\startup_stm32f401xe.lst mbed-os/targets/TARGET_STM/TARGET_STM32F4/TARGE
+T_STM32F401xE/device/TOOLCHAIN_ARM_STD/startup_stm32f401xe.S
 
 
 

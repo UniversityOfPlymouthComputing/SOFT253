@@ -1,4 +1,4 @@
---cpu Cortex-M4.fp
+--cpu=Cortex-M4.fp
 ".\build\hts221.o"
 ".\build\lps25h.o"
 ".\build\aes.o"
