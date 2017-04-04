@@ -1,4 +1,4 @@
-Component: ARM Compiler 5.06 update 3 (build 300) Tool: armlink [4d35c9]
+Component: ARM Compiler 5.06 update 4 (build 422) Tool: armlink [4d35d2]
 
 ==============================================================================
 
@@ -13590,9 +13590,9 @@ Image Symbol Table
     _printf_string                           0x0800159b   Thumb Code     8  _printf_char.o(.text)
     _printf_wctomb                           0x080015a5   Thumb Code   182  _printf_wctomb.o(.text)
     _printf_longlong_dec                     0x08001661   Thumb Code   108  _printf_longlong_dec.o(.text)
-    _printf_longlong_oct                     0x080016dd   Thumb Code    68  _printf_oct_int_ll.o(.text)
-    _printf_int_oct                          0x08001721   Thumb Code    24  _printf_oct_int_ll.o(.text)
-    _printf_ll_oct                           0x08001739   Thumb Code    12  _printf_oct_int_ll.o(.text)
+    _printf_longlong_oct                     0x080016dd   Thumb Code    66  _printf_oct_int_ll.o(.text)
+    _printf_int_oct                          0x0800171f   Thumb Code    24  _printf_oct_int_ll.o(.text)
+    _printf_ll_oct                           0x08001737   Thumb Code    12  _printf_oct_int_ll.o(.text)
     _chval                                   0x0800174d   Thumb Code    28  _chval.o(.text)
     __vfscanf_char                           0x08001775   Thumb Code    24  scanf_char.o(.text)
     _sgetc                                   0x08001795   Thumb Code    30  _sgetc.o(.text)
@@ -14731,77 +14731,77 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
          0          0          0          0          0       4508   aes.o
-         0          0          0          0          0     147678   analogin.o
-         0          0          0          0          0     179940   analogin_api.o
-        68          6          0          0          0     211663   cmsis_nvic.o
-         0          0          0          0          0       4092   dir.o
-        50          0         17          0          0       6360   eventqueue.o
-       112         12         54          0          0       1820   fatfilesystem.o
-       656        246        148          0          0      12832   file.o
-       306         36         16          4         28       3744   filebase.o
-       202          0          0          0          0       7260   filepath.o
-       586        140          0          0          0       6872   gpio_api.o
-         0          0          0          0          0     107456   gpio_irq_device.o
-        18          0          0          0          0        866   greentea_test_env.o
-       208         10          0          0          0       5259   hal_cm.o
-       408         34          0          0          0        952   hal_cm4.o
-       388         34          0          4          0      29162   hal_tick_32b.o
-      1020        128          4         32        212     177638   hts221.o
-       720         68         40          4         28      12060   i2c.o
-      2054        168          0          0         20      47440   i2c_api.o
+         0          0          0          0          0     147458   analogin.o
+         0          0          0          0          0     179680   analogin_api.o
+        68          6          0          0          0     211443   cmsis_nvic.o
+         0          0          0          0          0       3992   dir.o
+        50          0         17          0          0       6140   eventqueue.o
+       112         12         54          0          0       1740   fatfilesystem.o
+       656        246        148          0          0      12472   file.o
+       306         36         16          4         28       3624   filebase.o
+       202          0          0          0          0       7040   filepath.o
+       586        140          0          0          0       6712   gpio_api.o
+         0          0          0          0          0     107436   gpio_irq_device.o
+        18          0          0          0          0        846   greentea_test_env.o
+       208         10          0          0          0       5139   hal_cm.o
+       408         34          0          0          0        932   hal_cm4.o
+       388         34          0          4          0      29062   hal_tick_32b.o
+      1020        128          4         32        212     176838   hts221.o
+       720         68         40          4         28      11680   i2c.o
+      2054        168          0          0         20      46860   i2c_api.o
          0          0          0          0          0       1232   interruptmanager.o
-       882         28          0          0          0      18044   lps25h.o
-       472        142         70         28        472      17379   main.o
+       882         28          0          0          0      17664   lps25h.o
+       472        142         70         28        472      17019   main.o
          0          0          0          0          0        628   mbed_application.o
-        84         54          0          0          0        695   mbed_assert.o
-       172         10          0          0          0       3305   mbed_board.o
-       324        170          0          5          0       4408   mbed_critical.o
-        26          0          0          0          0        560   mbed_error.o
-       112          0          0          0          0       2451   mbed_gpio.o
-        12          0          0          0          0       1416   mbed_overrides.o
-       256         76          0          0          0       4960   mbed_pinmap_common.o
-      1292        136         99          8        349      27745   mbed_retarget.o
-        90          0          0          0          0       1221   mbed_ticker_api.o
-        16          6         28          8          0       1228   mbed_us_ticker_api.o
-        66          0          0          0          0       1200   mbed_wait_api_rtos.o
-       112         42          0          0          0       7922   mutex.o
-         0          0       1224          0          0       1528   peripheralpins.o
-       806        132         64          0          0       9115   pinmap.o
-      2162        200          4         16         16      38414   rt_cmsis.o
-        92          4          0          0          0        733   rt_event.o
-       638         34          0          0         48       9133   rt_list.o
-       666         10          0          0          0       4501   rt_mailbox.o
-       180          0          0          0          0       2277   rt_membox.o
-       446         12          0          0          0       2365   rt_mutex.o
-         0          0          0          5          0       1877   rt_oseventobserver.o
-       112         22          0          8          0       1366   rt_robin.o
-        56          4          0          0          0        657   rt_semaphore.o
-       370         56          0          7          0       6999   rt_system.o
-      1340        168          0          8         64      10713   rt_task.o
-        14          0          0          4          0        828   rt_time.o
-        22          6          0          4          0       1633   rtos_idle.o
-       416        158         92         52       8272      13880   rtx_conf_cm.o
-       774        156          0          8        620       9775   serial_api.o
-        40          6         28          0          0       3656   serialbase.o
-       170         20          4          0        128       6672   spi.o
-        36          8        404          0          0        992   startup_stm32f401xe.o
-        80         14          0          4          0       3340   stm32f4xx_hal.o
-        64          6          0          0          0      27477   stm32f4xx_hal_cortex.o
-        40          0          0          0          0       1399   stm32f4xx_hal_dma.o
-      4442         58          0          0          0      23758   stm32f4xx_hal_i2c.o
-        76          0          0          0          0       1335   stm32f4xx_hal_i2c_ex.o
-         2          0          0          0          0        574   stm32f4xx_hal_msp_template.o
-      1744         80         16          0          0       6852   stm32f4xx_hal_rcc.o
-       322         32          0          0          0       4199   stm32f4xx_hal_tim.o
-       988          8          0          0          0       2711   stm32f4xx_hal_uart.o
-         4          4          0          0          0        268   svc_table.o
-        40          4          0          0          0       3321   sys.o
-       722         62         16          4          0       5311   system_stm32f4xx.o
-        36          4          0          4          0       2640   thread.o
-       164         48          0          4         60       3080   us_ticker_32b.o
+        84         54          0          0          0        675   mbed_assert.o
+       172         10          0          0          0       3205   mbed_board.o
+       324        170          0          5          0       4288   mbed_critical.o
+        26          0          0          0          0        540   mbed_error.o
+       112          0          0          0          0       2371   mbed_gpio.o
+        12          0          0          0          0       1376   mbed_overrides.o
+       256         76          0          0          0       4820   mbed_pinmap_common.o
+      1292        136         99          8        349      27125   mbed_retarget.o
+        90          0          0          0          0       1181   mbed_ticker_api.o
+        16          6         28          8          0       1168   mbed_us_ticker_api.o
+        66          0          0          0          0       1160   mbed_wait_api_rtos.o
+       112         42          0          0          0       7822   mutex.o
+         0          0       1224          0          0       1488   peripheralpins.o
+       806        132         64          0          0       8915   pinmap.o
+      2162        200          4         16         16      37574   rt_cmsis.o
+        92          4          0          0          0        713   rt_event.o
+       638         34          0          0         48       8913   rt_list.o
+       666         10          0          0          0       4381   rt_mailbox.o
+       180          0          0          0          0       2217   rt_membox.o
+       446         12          0          0          0       2305   rt_mutex.o
+         0          0          0          5          0       1797   rt_oseventobserver.o
+       112         22          0          8          0       1306   rt_robin.o
+        56          4          0          0          0        637   rt_semaphore.o
+       370         56          0          7          0       6819   rt_system.o
+      1340        168          0          8         64      10453   rt_task.o
+        14          0          0          4          0        788   rt_time.o
+        22          6          0          4          0       1553   rtos_idle.o
+       416        158         92         52       8272      13620   rtx_conf_cm.o
+       774        156          0          8        620       9555   serial_api.o
+        40          6         28          0          0       3556   serialbase.o
+       170         20          4          0        128       6472   spi.o
+        36          8        404          0          0        972   startup_stm32f401xe.o
+        80         14          0          4          0       3240   stm32f4xx_hal.o
+        64          6          0          0          0      27437   stm32f4xx_hal_cortex.o
+        40          0          0          0          0       1359   stm32f4xx_hal_dma.o
+      4442         58          0          0          0      23198   stm32f4xx_hal_i2c.o
+        76          0          0          0          0       1295   stm32f4xx_hal_i2c_ex.o
+         2          0          0          0          0        554   stm32f4xx_hal_msp_template.o
+      1744         80         16          0          0       6672   stm32f4xx_hal_rcc.o
+       322         32          0          0          0       4079   stm32f4xx_hal_tim.o
+       988          8          0          0          0       2631   stm32f4xx_hal_uart.o
+         4          4          0          0          0        248   svc_table.o
+        40          4          0          0          0       3301   sys.o
+       722         62         16          4          0       5171   system_stm32f4xx.o
+        36          4          0          4          0       2560   thread.o
+       164         48          0          4         60       2960   us_ticker_32b.o
 
     ----------------------------------------------------------------------
-     27844       2862       2368        228      10320    1275375   Object Totals
+     27844       2862       2368        228      10320    1264615   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         68          0          8          7          3          0   (incl. Padding)
 
@@ -14847,7 +14847,7 @@ Image component sizes
          6          0          0          0          0          0   _printf_ls.o
          6          0          0          0          0          0   _printf_n.o
          6          0          0          0          0          0   _printf_o.o
-       112          8          0          0          0        124   _printf_oct_int_ll.o
+       112         10          0          0          0        124   _printf_oct_int_ll.o
          6          0          0          0          0          0   _printf_p.o
         78          0          0          0          0        108   _printf_pad.o
          0          0          0          0          0          0   _printf_percent.o
@@ -14939,20 +14939,20 @@ Image component sizes
         48          0          0          0          0        124   fpclassify.o
 
     ----------------------------------------------------------------------
-     13632        550        556         16        348       9700   Library Totals
+     13632        552        556         16        348       9700   Library Totals
         26          0          5          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-     12158        518        551         16        348       7848   c_w.l
+     12158        520        551         16        348       7848   c_w.l
         76          0          0          0          0        236   cpprt_w.l
       1324         32          0          0          0       1492   fz_wm.l
         48          0          0          0          0        124   m_wm.l
 
     ----------------------------------------------------------------------
-     13632        550        556         16        348       9700   Library Totals
+     13632        552        556         16        348       9700   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -14961,9 +14961,9 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     41476       3412       2924        244      10668    1248851   Grand Totals
-     41476       3412       2924        244      10668    1248851   ELF Image Totals
-     41476       3412       2924        244          0          0   ROM Totals
+     41476       3414       2924        244      10668    1238091   Grand Totals
+     41476       3414       2924        244      10668    1238091   ELF Image Totals
+     41476       3414       2924        244          0          0   ROM Totals
 
 ==============================================================================
 
